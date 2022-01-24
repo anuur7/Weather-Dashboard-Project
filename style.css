@@ -1,6 +1,7 @@
 body{
     padding: 0;
     margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header {
@@ -9,6 +10,9 @@ header {
     justify-content: center;
     align-items: center;
     margin-bottom: 6vh;
+    font-size: 20px;
+    font-weight: 800;
+    text-shadow: 2px 3px gray;
 }
 
 .input-box{
@@ -38,9 +42,42 @@ header {
 
 .current-location{
     border: 2px solid black;
-    padding: 10vh 15vw;
+    padding: 10vh 8vw;
+    border-radius: 30px;
+    box-shadow: 8px 10px black;
     margin-right: 35vw;
+    text-align: center;
 }
+
+.city{
+    font-size: 40px;
+}
+
+.date{
+    font-size: 20px;
+}
+
+.temperature{
+    font-size: 70px;
+    font-weight: 600;
+    text-shadow: 2px 5px gray;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.humidity{
+    font-size: 20px;
+}
+
+.wind{
+    font-size: 20px;
+}
+
+
+
+
+
+
 
 .forecast{
     display: flex;
@@ -72,3 +109,4 @@ header {
     border: 2px solid black;
     padding: 8vh 8vw;
 }
+
