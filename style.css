@@ -26,7 +26,9 @@ header {
 
 .side-list{
     line-height: 10vh;
-    font-size: 25px;
+    font-size: 30px;
+    font-weight: 700;
+    text-shadow: 2px 2px gray;
 }
 
 .side-list li{
@@ -41,10 +43,9 @@ header {
 }
 
 .current-location{
-    border: 2px solid black;
+    border: url('images/sky.png');
     padding: 10vh 8vw;
     border-radius: 30px;
-    box-shadow: 8px 10px black;
     margin-right: 35vw;
     text-align: center;
 }
@@ -72,12 +73,6 @@ header {
 .wind{
     font-size: 20px;
 }
-
-
-
-
-
-
 
 .forecast{
     display: flex;
