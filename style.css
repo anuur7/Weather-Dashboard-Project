@@ -8,5 +8,67 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 6vh;
 }
 
+.input-box{
+    font-size: 20px;
+}
+
+.btn{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.side-list{
+    line-height: 10vh;
+    font-size: 25px;
+}
+
+.side-list li{
+    list-style: none;
+    cursor: pointer;
+}
+
+.cities-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5vh;
+}
+
+.current-location{
+    border: 2px solid black;
+    padding: 10vh 15vw;
+    margin-right: 35vw;
+}
+
+.forecast{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.box1{
+    border: 2px solid black;
+    padding: 8vh 8vw;
+}
+
+.box2{
+    border: 2px solid black;
+    padding: 8vh 8vw;
+}
+
+.box3{
+    border: 2px solid black;
+    padding: 8vh 8vw;
+}
+
+.box4{
+    border: 2px solid black;
+    padding: 8vh 8vw;
+}
+
+.box5{
+    border: 2px solid black;
+    padding: 8vh 8vw;
+}
