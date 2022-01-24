@@ -9,9 +9,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 6vh;
     font-size: 20px;
-    font-weight: 800;
     text-shadow: 2px 3px gray;
 }
 
@@ -27,8 +25,9 @@ header {
 .side-list{
     line-height: 10vh;
     font-size: 30px;
-    font-weight: 700;
+    font-weight: 500;
     text-shadow: 2px 2px gray;
+    margin-top: 5vh;
 }
 
 .side-list li{
@@ -52,6 +51,8 @@ header {
 
 .city{
     font-size: 40px;
+    text-shadow: 2px 2px gray;
+    margin-bottom: 2vh;
 }
 
 .date{
@@ -60,14 +61,15 @@ header {
 
 .temperature{
     font-size: 70px;
-    font-weight: 600;
+    font-weight: 500;
     text-shadow: 2px 5px gray;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
 }
 
 .humidity{
     font-size: 20px;
+    margin-bottom: 2vh;
 }
 
 .wind{
