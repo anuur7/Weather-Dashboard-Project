@@ -21,6 +21,8 @@ async function fetchSearch() {
   );
   const data = await weatherResponse.json();
 
+  console.log(data)
+
   //displaying the classes on screen with innerHTML
   city.innerHTML = data.name;
 
@@ -31,7 +33,6 @@ async function fetchSearch() {
   let todaysDate = `${day}/${month}/${year}`;
   fullDate.innerHTML = todaysDate;
 
-  console.log(data.main);
   temperature.innerHTML = `${Math.floor(data.main.temp)}°`;
   humidity.innerHTML = `Humidity: ${data.main.humidity}%`;
   wind.innerHTML = `Wind: ${data.wind.speed} mph`;

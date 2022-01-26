@@ -1,109 +1,114 @@
-body{
-    padding: 0;
-    margin: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    text-shadow: 2px 3px gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  text-shadow: 2px 3px gray;
+  margin-bottom: 8vh;
 }
 
-.input-box{
-    font-size: 20px;
+.input-box {
+  font-size: 20px;
 }
 
-.btn{
-    font-size: 20px;
-    cursor: pointer;
+.btn {
+  font-size: 20px;
+  cursor: pointer;
 }
 
-.side-list{
-    line-height: 10vh;
-    font-size: 30px;
-    font-weight: 500;
-    text-shadow: 2px 2px gray;
-    margin-top: 5vh;
+.side-list {
+  line-height: 13vh;
+  font-size: 30px;
+  font-weight: 500;
+  text-shadow: 2px 2px gray;
+  margin-top: 5vh;
 }
 
-.side-list li{
-    list-style: none;
-    cursor: pointer;
+.side-list li {
+  list-style: none;
+  cursor: pointer;
 }
 
-.cities-container{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 5vh;
+.cities-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5vh;
 }
 
-.current-location{
-    border: url('images/sky.png');
-    padding: 10vh 8vw;
-    border-radius: 30px;
-    margin-right: 35vw;
-    text-align: center;
+.current-location {
+  padding: 10vh 20vw;
+  border-radius: 30px;
+  text-align: center;
 }
 
-.city{
-    font-size: 40px;
-    text-shadow: 2px 2px gray;
-    margin-bottom: 2vh;
+.city {
+  font-size: 40px;
+  text-shadow: 2px 2px gray;
+  margin-bottom: 2vh;
 }
 
-.date{
-    font-size: 20px;
+.date {
+  font-size: 20px;
 }
 
-.temperature{
-    font-size: 100px;
-    font-weight: 500;
-    text-shadow: 2px 5px gray;
-    margin-top: 4vh;
-    margin-bottom: 4vh;
+.temperature {
+  font-size: 100px;
+  font-weight: 500;
+  text-shadow: 2px 5px gray;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
 }
 
-.humidity{
-    font-size: 20px;
-    margin-bottom: 2vh;
+.humidity {
+  font-size: 20px;
+  margin-bottom: 2vh;
 }
 
-.wind{
-    font-size: 20px;
+.wind {
+  font-size: 20px;
 }
 
-.forecast{
-    display: flex;
-    justify-content: space-evenly;
-    
+.forecast {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-right: 2vw;
 }
 
-.box1{
-    border: 2px solid black;
-    padding: 8vh 8vw;
+.box1 {
+  border: 2px solid black;
+  padding: 8vh 8vw;
+  margin-bottom: 2vh;
 }
 
-.box2{
-    border: 2px solid black;
-    padding: 8vh 8vw;
+.box2 {
+  border: 2px solid black;
+  padding: 8vh 8vw;
+  margin-bottom: 2vh;
 }
 
-.box3{
-    border: 2px solid black;
-    padding: 8vh 8vw;
+.box3 {
+  border: 2px solid black;
+  padding: 8vh 8vw;
+  margin-bottom: 2vh;
 }
 
-.box4{
-    border: 2px solid black;
-    padding: 8vh 8vw;
+.box4 {
+  border: 2px solid black;
+  padding: 8vh 8vw;
+  margin-bottom: 2vh;
 }
 
-.box5{
-    border: 2px solid black;
-    padding: 8vh 8vw;
+.box5 {
+  border: 2px solid black;
+  padding: 8vh 8vw;
+  margin-bottom: 2vh;
 }
-
