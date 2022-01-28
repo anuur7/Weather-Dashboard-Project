@@ -5,8 +5,8 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-body{
-    background-image: url("./images/skyy.png");
+body {
+  background-image: url("./images/skyy.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -35,7 +35,7 @@ header {
   line-height: 13vh;
   font-size: 35px;
   font-weight: 500;
-  text-shadow: 2px 3px gray;
+  text-shadow: 2px 4px gray;
 }
 
 .side-list li {
@@ -67,8 +67,8 @@ header {
   font-weight: 600;
 }
 
-.icon{
-    margin-top: 2vh;
+.icon {
+  margin-top: 2vh;
 }
 
 .temperature {
@@ -92,11 +92,10 @@ header {
   margin-bottom: 2vh;
 }
 
-.uv-index{
-    font-size: 18px;
+.uv-index {
+  font-size: 18px;
   font-weight: 600;
   text-shadow: 2px 2px gray;
-  
 }
 
 .forecast {
@@ -107,41 +106,146 @@ header {
 }
 
 .box1 {
+  text-align: center;
   border: 2px solid black;
-  border-radius: 5px;
+  border-radius: 20%;
   box-shadow: 5px 5px black;
-  padding: 8vh 8vw;
+  padding: 3vh 3vw;
   margin-bottom: 2vh;
+}
+
+.forecast-date1{
+    font-weight: 600;
+}
+
+.forecast-wind1{
+    font-weight: 600;
+    margin-bottom: 1vh;
+}
+
+.forecast-humidity1{
+    font-weight: 600;
+}
+
+.forecast-temp1{
+    font-size: 25px;
+    font-weight: 600;
+    text-shadow: 2px 2px gray;
+    margin-bottom: 1vh;
 }
 
 .box2 {
+  text-align: center;
   border: 2px solid black;
-  border-radius: 5px;
+  border-radius: 20%;
   box-shadow: 5px 5px black;
-  padding: 8vh 8vw;
+  padding: 3vh 3vw;
   margin-bottom: 2vh;
+}
+
+.forecast-date2{
+    font-weight: 600;
+}
+
+.forecast-wind2{
+    font-weight: 600;
+    margin-bottom: 1vh;
+}
+
+.forecast-humidity2{
+    font-weight: 600;
+}
+
+.forecast-temp2{
+    font-size: 25px;
+    font-weight: 600;
+    text-shadow: 2px 2px gray;
+    margin-bottom: 1vh;
 }
 
 .box3 {
+  text-align: center;
   border: 2px solid black;
-  border-radius: 5px;
+  border-radius: 20%;
   box-shadow: 5px 5px black;
-  padding: 8vh 8vw;
+  padding: 3vh 3vw;
   margin-bottom: 2vh;
+}
+
+.forecast-date3{
+    font-weight: 600;
+}
+
+.forecast-wind3{
+    font-weight: 600;
+    margin-bottom: 1vh;
+}
+
+.forecast-humidity3{
+    font-weight: 600;
+}
+
+.forecast-temp3{
+    font-size: 25px;
+    font-weight: 600;
+    text-shadow: 2px 2px gray;
+    margin-bottom: 1vh;
 }
 
 .box4 {
+  text-align: center;
   border: 2px solid black;
-  border-radius: 5px;
+  border-radius: 20%;
   box-shadow: 5px 5px black;
-  padding: 8vh 8vw;
+  padding: 3vh 3vw;
   margin-bottom: 2vh;
 }
 
+.forecast-date4{
+    font-weight: 600;
+}
+
+.forecast-wind4{
+    font-weight: 600;
+    margin-bottom: 1vh;
+}
+
+.forecast-humidity4{
+    font-weight: 600;
+}
+
+.forecast-temp4{
+    font-size: 25px;
+    font-weight: 600;
+    text-shadow: 2px 2px gray;
+    margin-bottom: 1vh;
+}
+
 .box5 {
+  text-align: center;
   border: 2px solid black;
-  border-radius: 5px;
+  border-radius: 20%;
   box-shadow: 5px 5px black;
-  padding: 8vh 8vw;
+  padding: 3vh 3vw;
   margin-bottom: 2vh;
+}
+
+.forecast-date5{
+    font-weight: 600;
+}
+
+.forecast-wind5{
+    font-weight: 600;
+    margin-bottom: 1vh;
+}
+
+.forecast-humidity5{
+    font-weight: 600;
+}
+
+.forecast-temp5{
+    font-size: 25px;
+    font-weight: 600;
+    text-shadow: 2px 2px gray;
+    margin-bottom: 1vh;
 }
