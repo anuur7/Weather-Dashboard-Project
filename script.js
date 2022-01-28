@@ -31,27 +31,28 @@ async function fetchSearch() {
   const lon = data.coord.lon;
   const lat = data.coord.lat;
   oneCall(lon, lat);
+
   //displaying the classes on screen with innerHTML
   city.innerHTML = data.name;
 
-  let date = new Date();
-  let day = date.getDate();
-  let month = date.getMonth() + 1;
-  let year = date.getFullYear();
-  let todaysDate = `${day}/${month}/${year}`;
-  fullDate.innerHTML = todaysDate;
+  //covert the date to todays date and fetch the data
+  let today = new Date().toLocaleDateString();
+  fullDate.innerHTML = today;
 
-  const iconURL = document.createElement("img");
+  //just before you insert the img tag empty the one before
   icon.innerHTML = "";
+  //use image tag to use the URL for the icon
+  const iconURL = document.createElement("img");
   iconURL.setAttribute(
     "src",
     `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`
   );
-  console.log(iconURL);
+  icon.append(iconURL);
+
+  //get temp, humidity and wind data from fetch
   temperature.innerHTML = `${Math.floor(data.main.temp)}°`;
   humidity.innerHTML = `Humidity: ${data.main.humidity}%`;
   wind.innerHTML = `Wind: ${data.wind.speed} mph`;
-  icon.append(iconURL);
 }
 
 //async functions for the cities on the side list
@@ -63,28 +64,29 @@ async function getCities(e) {
   );
   const data = await weatherResponse.json();
 
+  const lon = data.coord.lon;
+  const lat = data.coord.lat;
+  oneCall(lon, lat);
+
   city.innerHTML = data.name;
+  
+  let today = new Date().toLocaleDateString();
+  fullDate.innerHTML = today;
 
-  let date = new Date();
-  let day = date.getDate();
-  let month = date.getMonth() + 1;
-  let year = date.getFullYear();
-  let todaysDate = `${day}/${month}/${year}`;
-  fullDate.innerHTML = todaysDate;
-
+  icon.innerHTML = '';
   const iconURL = document.createElement("img");
-  icon.innerHTML = "";
   iconURL.setAttribute(
     "src",
     `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`
   );
+  icon.append(iconURL);
 
   temperature.innerHTML = `${Math.floor(data.main.temp)}°`;
   humidity.innerHTML = `Humidity: ${data.main.humidity}%`;
   wind.innerHTML = `Wind: ${data.wind.speed} mph`;
-  icon.append(iconURL);
 }
 
+//
 async function oneCall(lon, lat) {
   const response = await fetch(
     `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=minutely,hourly,alert&appid=dbb45a93ce752788381a20675a5a9c02`
