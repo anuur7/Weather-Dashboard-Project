@@ -60,7 +60,7 @@ async function fetchSearch() {
   fullDate.innerHTML = today;
 
   //just before you insert the img tag empty the one before
-  icon.innerHTML = '';
+  icon.innerHTML = "";
   //use image tag to use the URL for the icon
   const iconURL = document.createElement("img");
   iconURL.setAttribute(
@@ -93,7 +93,7 @@ async function getCities(e) {
   let today = new Date().toLocaleDateString();
   fullDate.innerHTML = today;
 
-  icon.innerHTML = '';
+  icon.innerHTML = "";
   const iconURL = document.createElement("img");
   iconURL.setAttribute(
     "src",
@@ -115,7 +115,7 @@ async function oneCall(lon, lat) {
   console.log(data);
   uv.innerHTML = `UV Index: ${data.current.uvi}`;
 
-  displayForecast(data) 
+  displayForecast(data);
 }
 
 function displayForecast(data) {
@@ -124,7 +124,7 @@ function displayForecast(data) {
   let today = new Date().toLocaleDateString();
   fDate1.innerHTML = `Morning - ${today}`;
 
-  fIcon1.innerHTML = '';
+  fIcon1.innerHTML = "";
   const fIconURL1 = document.createElement("img");
   fIconURL1.setAttribute(
     "src",
@@ -140,7 +140,7 @@ function displayForecast(data) {
   fDate2.innerHTML = data.daily[1].dt;
   fDate2.innerHTML = `Day - ${today}`;
 
-  fIcon2.innerHTML = '';
+  fIcon2.innerHTML = "";
   const fIconURL2 = document.createElement("img");
   fIconURL2.setAttribute(
     "src",
@@ -156,7 +156,7 @@ function displayForecast(data) {
   fDate3.innerHTML = data.daily[2].dt;
   fDate3.innerHTML = `Evening - ${today}`;
 
-  fIcon3.innerHTML = '';
+  fIcon3.innerHTML = "";
   const fIconURL3 = document.createElement("img");
   fIconURL3.setAttribute(
     "src",
@@ -167,12 +167,12 @@ function displayForecast(data) {
   fTemp3.innerHTML = `${Math.floor(data.daily[2].temp.eve)}°`;
   fHumidity3.innerHTML = `Humidity: ${data.daily[2].humidity}%`;
   fWind3.innerHTML = `Wind: ${data.daily[2].wind_speed} mph`;
-  
+
   // box4 data fetch
   fDate4.innerHTML = data.daily[3].dt;
   fDate4.innerHTML = `Night - ${today}`;
 
-  fIcon4.innerHTML = '';
+  fIcon4.innerHTML = "";
   const fIconURL4 = document.createElement("img");
   fIconURL4.setAttribute(
     "src",
@@ -188,7 +188,7 @@ function displayForecast(data) {
   fDate5.innerHTML = data.daily[4].dt;
   fDate5.innerHTML = `Max/Min - ${today}`;
 
-  fIcon5.innerHTML = '';
+  fIcon5.innerHTML = "";
   const fIconURL5 = document.createElement("img");
   fIconURL5.setAttribute(
     "src",
@@ -196,7 +196,9 @@ function displayForecast(data) {
   );
   fIcon5.append(fIconURL5);
 
-  fTemp5.innerHTML = `${Math.floor(data.daily[4].temp.max)}°/${Math.floor(data.daily[4].temp.min)}°`;
+  fTemp5.innerHTML = `${Math.floor(data.daily[4].temp.max)}°/${Math.floor(
+    data.daily[4].temp.min
+  )}°`;
   fHumidity5.innerHTML = `Humidity: ${data.daily[4].humidity}%`;
   fWind5.innerHTML = `Wind: ${data.daily[4].wind_speed} mph`;
 }
